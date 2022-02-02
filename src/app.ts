@@ -11,7 +11,7 @@ export default class App {
   public env: string;
   constructor(routes: Routes[]) {
     (this.app = express()), (this.port = 3001);
-    this.env = process.env.NODE_ENV || 'development';
+    this.env = process.env.PORT || 'development';
 
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
