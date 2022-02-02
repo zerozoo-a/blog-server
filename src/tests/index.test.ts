@@ -23,5 +23,9 @@ describe('Testing Index', () => {
 
       return request(app.getServer()).get(`${userRoute.path}`).expect(200);
     });
+    it('user method add', () => {
+      const method = new UserRoute();
+      return expect(method.addSomething(1, 1)).toBe(2);
+    });
   });
 });

@@ -13,4 +13,8 @@ export default class UserRoute implements Routes {
   private initializeRoutes(): void {
     this.router.get(`${this.path}`, this.userController.mainView);
   }
+  // for jest test
+  public addSomething(a: number, b: number): number {
+    return a + b;
+  }
 }
