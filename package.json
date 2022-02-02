@@ -5,9 +5,12 @@
   "license": "MIT",
   "description": "zerozoo385@gmail.com",
   "author": "zerozoo385@gmail.com",
+  "engines": {
+    "node": "16.13.1"
+  },
   "scripts": {
     "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts",
-    "start": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts",
+    "start": "tsc && node ./dist/index.js",
     "test": "jest --watch"
   },
   "devDependencies": {
