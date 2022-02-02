@@ -6,7 +6,7 @@
   "description": "zerozoo385@gmail.com",
   "author": "zerozoo385@gmail.com",
   "scripts": {
-    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' ./service.ts",
+    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts",
     "app": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts",
     "test": "jest --watch"
   },

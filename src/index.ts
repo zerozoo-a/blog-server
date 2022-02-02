@@ -1,4 +1,4 @@
-import App from './src/app';
+import App from './app';
 import IndexRoute from './routes/index.route';
 import UserRoute from './routes/user.route';
 
