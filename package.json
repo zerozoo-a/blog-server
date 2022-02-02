@@ -1,13 +1,13 @@
 {
   "name": "myApp",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.ts",
   "license": "MIT",
   "description": "zerozoo385@gmail.com",
   "author": "zerozoo385@gmail.com",
   "scripts": {
     "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts",
-    "start": "tsc && node ./dist/index.js",
+    "start": "npx tsc --w",
     "test": "jest --watch"
   },
   "devDependencies": {
