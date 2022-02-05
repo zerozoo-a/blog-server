@@ -7,7 +7,7 @@
   "author": "zerozoo385@gmail.com",
   "scripts": {
     "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts",
-    "start": "npx tsc --w",
+    "start": "nodemon --watch './**/*.ts' --exec 'ts-node' ./src/index.ts",
     "test": "jest --watch"
   },
   "devDependencies": {
