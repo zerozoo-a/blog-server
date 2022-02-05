@@ -8,10 +8,9 @@ import type { Routes } from './interfaces/routes.interface';
 export default class App {
   public app: Application;
   public port: string | number;
-  public env: string;
   constructor(routes: Routes[]) {
     (this.app = express()), (this.port = 3001);
-    this.env = process.env.PORT || 'development';
+    this.port = process.env.PORT || 'development';
 
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
