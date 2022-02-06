@@ -9,8 +9,7 @@ export default class App {
   public app: Application;
   public port: string | number;
   constructor(routes: Routes[]) {
-    (this.app = express()), (this.port = 3001);
-    this.port = process.env.PORT || 'development';
+    (this.app = express()), (this.port = process.env.PORT || 'development');
 
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
@@ -25,7 +24,9 @@ export default class App {
       })
       .on('error', (error: Error): void => {
         console.error('error: ', error);
-        this.app.listen((this.port as number) + 1);
+        if (typeof this.port === 'number') {
+          this.app.listen((this.port as number) + 1);
+        }
       });
   }
   public getServer(): Application {

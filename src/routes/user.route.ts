@@ -1,4 +1,4 @@
-import express, { Router } from 'express';
+import { Router } from 'express';
 import type { Request, Response, NextFunction } from 'express';
 import { Routes } from '../interfaces/routes.interface';
 import UserController from '../controllers/users.controller';
