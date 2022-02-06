@@ -10,7 +10,6 @@ export default class App {
   public port: string | number;
   constructor(routes: Routes[]) {
     (this.app = express()), (this.port = process.env.PORT || 'development');
-
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
   }
